@@ -2,15 +2,16 @@
 ## Lab 1.0 - Introduction
 
 An introduction to the Java programming language and tools 
-including Eclipse, Eclipse Git client, etc.  
+including Eclipse, Eclipse Git client, etc. 
 
-A separate folder containing a PHP version of this lab is
-included for the honors section.  Instructions for the PHP
-version can be found below.
+Followed by an introduction to using conditionals and loops in the Java programming language.
+
 
 This is a lab used in Computer Science II (CSCE 156, CSCE 156H) 
 in the [Department of Computer Science & Engineering](https://cse.unl.edu) 
 at the [University of Nebraska-Lincoln](https://unl.edu).
+
+Chris Bourke wrote this lab, revamped and combined with Lab 2 by Sarah Roscoe for Summer 2021.
 
 ## Overview
 
@@ -20,6 +21,16 @@ In each lab there may be pre-lab activities that you are *required*
 to complete prior to attending lab.  Failure to do so may mean that 
 you will not be given full credit for the lab.  
 
+### Resources
+Prior to lab you should read/review the following resources.
+* `if-else tutorial`:
+http://download.oracle.com/javase/tutorial/java/nutsandbolts/if.html
+* `for` loop tutorial:
+http://download.oracle.com/javase/tutorial/java/nutsandbolts/for.html
+* `while` loop tutorial:
+http://download.oracle.com/javase/tutorial/java/nutsandbolts/while.html
+
+
 ### Lab Objectives & Topics
 Following the lab, you should be able to:
 * Receive and activate your CSE account and log into the network 
@@ -28,19 +39,31 @@ Following the lab, you should be able to:
 * Open, compile, and execute a given Java program in Eclipse.
 * Write a simple program in the Eclipse IDE, compile, and 
   execute that program.
+* Use `if-else` statements to control the logical flow of the
+  program.
+* Use `for` and `while` loops to implement repetition statements in a
+  program.
+* Write complex programs that require conditional logical statements
+  and loops.
+
 
 
 ### Peer Programming Pair-Up
+You may work on this lab with a partner or by yourself. Whichever you choose, you should submit your code to the corresponding Handin assignment. Handin link: https://cse-apps.unl.edu/handin
 
-To encourage collaboration and a team environment, labs will be
-structured in a *pair programming* setup.  At the start of
+
+
+
+
+If you attend lab over Zoom, you 
+may work in a a *pair programming* setup.  At the start of
 each lab, you may be randomly paired up with another student by
 a lab instructor.  One of you will be designated the *driver* 
 and the other the *navigator*.  
 
 The navigator will be responsible for reading the instructions 
 and telling the driver what is to be done.  The driver will be 
-in charge of the keyboard and workstation.  Both driver and 
+in charge of the keyboard and workstation (**on Zoom, this means the driver shares their screen**).  Both driver and 
 navigator are responsible for suggesting fixes and solutions 
 *together*.  Neither the navigator nor the driver is "in charge."  
 Beyond your immediate pairing, you are encouraged to help and 
@@ -94,10 +117,6 @@ Eclipse at the following URL.
 
 https://www.eclipse.org/
 
-***IMPORTANT*** When you run the installer be sure to select and
-install the **Eclipse IDE for Enterprise Java Developers** and
-*not* the one just for Java Developers.  We'll use some of the 
-features of this version in future labs.
 
 ## 2. Checking Out Code From Github Using Eclipse
 
@@ -160,7 +179,7 @@ see your cloned project.
 
 All students should complete this Java section, even if you are 
 already familiar with Java, in order to familiarize yourself 
-with how labs will work for the semester.  Only those
+with how labs will work for the semester.  
 
 ## 3.1 Running & Editing Programs
 
@@ -360,128 +379,126 @@ be sure your code compiles, runs and passes all tests in the
 webgrader.  Address any issues and resubmit as many times as you 
 like up to the due date.
 
-# PHP 
+# Part 2
 
-Only those in the Honors section need to complete this section on
-PHP.
+## 6. Conditionals & Loops
 
-The project you checked out from GitHub contains a `php` folder 
-which contains several PHP scripts.  To run these scripts you 
-will need a PHP interpreter.  To do this, we will reclone the
-project from the CSE command line.
+Java provides standard control structures for conditionals and
+repetition. Specifically, Java provides the usual `if-else`
+statements as well as `for` and `while` loops. The syntax for these
+control structures should look familiar.  Some examples:
 
-1. Open Putty (https://putty.org/, Windows) or terminal (Mac) and 
-login to the cse server using your CSE credentials.
-2. Clone the project from github using the following command.  
-`git clone https://github.com/cbourke/CSCE156-Lab01`
-3. Open the file, `statistics.php` in the text editor of your choice.
-If you are familiar with the command line, pico, emacs, or vi are 
-good text editors.  Otherwise, you can review our BYOD setup video:  
-https://www.youtube.com/watch?v=6UaJ2zFs7VQ&list=PL4IH6CVPpTZVkiEnCEOdGbYsFEdtKc5Bx
-4. The script prompts the user to enter a number of integers 
-and computes several statistics (minimum, maximum, average, sum) and 
-outputs the results.  Most of the program's framework has been provided 
-for you.  In this activity, you will write the remainder of the program.
-5. To run the script from the command line, execute the following command.  
-`php statistics.php`
-6. Though the script runs, it does not output the correct values.  
-To get it to work, you will need to implement the following two 
-functions:
-* `getMax($array)` - This method should return the maximum of the 
-elements in the array.
-* `getSum($array)` - This method should return the sum of the 
-elements in the array.
-7. Rerun your program to check that it works.
+```java
+if(x > 0) {
+  //DO SOMETHING
+} else if(x < 0) {
+  //DO SOMETHING ELSE
+} else {
+  //OTHERWISE
+}
 
-## Modifying The Script
+for(int i=0; i<n; i++) {
+  //DO SOMETHING
+}
 
-The program you've completed is interactive in that it prompts the 
-user for input.  You will now change the script to instead use 
-command line arguments to read in the list of numbers directly 
-from the command line.
-
-PHP supports command line arguments by providing a built-in array, 
-`$argv` which is 0-indexed.  Note: the first element in this array 
-is the script's name, so you will need to process starting from 
-index 1.  Once you have made the appropriate changes, you should 
-be able to execute your script as follows:
-`php statistics.php 10 20 30 40`
-
-## PHP in a Dynamic Webpage
-
-You will now utilize PHP in a dynamic, interactive web page.  The 
-webserver is responsible for handling requests from clients 
-(browsers), executing the proper PHP script(s) and returning the 
-output (HTML) to the client.  This activity will have you finishing 
-two PHP pages that reads a user's name and birthday and tells them 
-how old they are.
-
-1. The Apache webserver on CSE has been setup so that each user 
-can place files into a `public_html` directory and these files will 
-be available through a web browser.  To create this directory, use 
-the following command:
-`mkdir public_html`
-2. Make sure your `public_html` directory world-executable using 
-this command:
-`chmod go+x public_html`
-3. Copy the `birthday.php` and `birthday_result.php` files into 
-your `public_html` directory and make them world-readable using 
-the command:
-`chmod o+r *.php`
-3. Open a web browser using the URL, http://cse.unl.edu/~login/birthday.php
-`login` replaced with your CSE login.	You will need to modify the 
-scripts to get them working properly.  
-
-The `birthday.php` page should render in your web browser without 
-any problems.  However, it is incomplete.  Take these steps to get 
-it in working order.
-
-1. There are several months missing from the drop down menu.  Include 
-them by modifying the code that builds the `$month` array.
-2. Modify the code as indicated to populate the `Date` drop 
-down menu so that dates 1 thru 31 appear.  Use the year drop 
-down menu as a model.
-
-The HyperText Transfer Protocol (HTTP) allows clients to 
-`POST` data to another page for processing.  You'll notice that your 
-HTML form in `birthday.php` is configured to post its results to 
-`birthday_result.php`.  Parameters posted to this page are specified 
-by the input elements in the HTML form using the name property.  In 
-the result page, these parameters are available through the `$_POST`
-array.  This is an associative array (indexed by strings).  You can 
-get the posted values using the syntax: `$name = $_POST['name'];`
-where `'name'` is replaced with the name of the form value.
-
-1. Modify the result page to pull the values posted from the form page.
-2. Also modify the script as indicated to print the appropriate message.  
-If today is the user's birthday, print `Happy Birthday!`, otherwise print 
-`Your friends have XX shopping days until your next birthday` where `XX` 
-is the appropriate variable value.  Note: strings can be concatenated 
-with variable values in PHP by using the period operator.  An example:
-```php
-print "This is PHP, version " . $version . ", have fun!";
+int i = 0;
+while(i < n) {
+  //DO SOMETHING
+  i++;
+}
 ```
 
-## Submitting and Grading Your Program
+In addition, Java provides a foreach-loop, also referred to as an
+*enhanced for-loop*, for iterating over collections or elements in an 
+array.  This feature is mostly for convenience.  The following example
+demonstrates how to use this loop.
 
-Submit the `statistics.php` file to the webhandin and grade
-yourself with the webgrader to complete your lab.
+```java
+String arr[] = new String[10];
+...
+for(String s : arr) {
+  System.out.println(s); 
+}
+```
 
-## Advanced Activity (Optional)
+An enhanced for-loop can be used for `Set` and `List` collections.
 
-Enter an invalid birthdate into your web page and observe 
-what happens.  Is this behavior ideal?  Think about some 
-alternatives to handle invalid dates.
+## 7. Activities 
 
-Most web pages utilize some JavaScript or JavaScript frameworks 
-or libraries to make the web page dynamic.  Dates are usually 
-entered by having a calendar-like popup appear and have the 
-users click actual dates on the calendar.  This provides a 
-much better user experience and has the added benefit of 
-preventing invalid dates.  
+### 7.1 Sum of Natural Numbers
 
-Familiarize yourself with jQuery and in particular, the "Datepicker" 
-jQuery UI plugin (http://jqueryui.com/demos/datepicker/#dropdown-month-year) 
-and integrate it into your PHP page.  Note: changes will need 
-to be made to both the input and the result page.
+Natural numbers are the usual counting numbers; 1, 2, 3, ... In this
+exercise you will write several loops to compute the sum of natural
+numbers 1 thru `n` where `n` is read from the command line. You will
+also write an enhanced for-loop to iterate over an array and process
+data.
+
+1.  Open the `Natural.java` source file. The code to read in `n` has been
+    provided for you. An array mapping integer values 1 thru 10 to text
+    values has also been created for you.
+
+2.  Write a `for`-loop and a `while`-loop in the relevant methods to
+    compute the sum of natural numbers 1 thru `n` and return the 
+    result.  In the `main` method call your methods and output 
+    the result.  
+    
+3.  Write a an enhanced for-loop to iterate over the elements of the `zeroToTen`
+    array. As you iterate over the elements, concatenate each
+    string, delimited by a single space to a result string and print the
+    result at the end of the loop. Your result should look something
+    like the following:
+    
+    `zero + one + two + three + four + five + six + seven + eight + nine + ten = 55`
+
+### 7.2 Child Tax Credit
+
+When filing for federal taxes, a credit is given to tax payers with
+dependent children according to the following rules. The first dependent
+child younger than 18 is worth a $1,000.00 credit. Each dependent child
+younger than 18 after the first child is worth a $500 tax credit each.
+You will complete a Java program to output a table of dependent
+children, how much each contributes to a tax credit, and a total child
+tax credit. Your table should look something like the following.
+
+```text
+Child           Amount
+Tommy (14)      $1000.00
+Richard (12)    $500.00
+Harold (21)     $0.00
+Total Credit:   $1500.00
+```
+
+1.  Open the `Child.java` and `ChildCredit.java` source files
+
+2.  The `Child` class has already been implemented for you. Note how the 
+    `Child` class is used.  Several instances of children have been created 
+    and placed into a `List`.
+
+    Similar to an array, a `List` stores elements using 0-indexing. Each one
+    can be accessed using the `get` method. For example, `kids.get(i)` gets 
+    the i-th kid.  You could also use an *enhanced for loop* to iterate over 
+    the elements in the `List`.
+
+3.  Implement the `produceReport` method to compute the child tax credit(s)
+    and output a table similar to the one above.  Your method should return
+    the grand total of the credit.  
+    
+    Each child is an *instance* of the `Child` class. Each instance has its own
+    variables so that each child can be a different age. To get a
+    particular child’s age, you can use a *getter* method. For example,
+    to get the age of `tom` you can use the syntax, `tom.getAge()`
+
+### 8. Testing, Submitting & Grading
+
+* Test your programs using the provided JUnit test suite(s).  Fix any
+errors and completely debug your programs.
+* Submit the following files through webhandin:
+  * `Natural.java`
+  * `ChildCredit.java`
+* Run the grader and verify the output to complete your lab.
+
+### Advanced Activity (Optional)
+
+Use the `String.format()` method to reformat the output of the Child Tax 
+Credit program to print every piece of data in its own column.
 
