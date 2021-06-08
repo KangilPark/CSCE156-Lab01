@@ -150,7 +150,7 @@ navigation menu:
 </p>  
 
 4. Copy/paste or type into the URI field, the URL: 
-   https://github.com/cbourke/CSCE156-Lab01  
+   https://github.com/sroscoe2/CSCE156-Lab01/ 
 <p align="center">
 <img src="images/eclipseCloneDialogAMarkUp.png" alt="URL" width="50%"/>
 </p>
