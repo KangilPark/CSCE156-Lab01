@@ -11,7 +11,7 @@ This is a lab used in Computer Science II (CSCE 156, CSCE 156H)
 in the [Department of Computer Science & Engineering](https://cse.unl.edu) 
 at the [University of Nebraska-Lincoln](https://unl.edu).
 
-Chris Bourke wrote this lab, revamped and combined with Lab 2 by Sarah Roscoe for Summer 2021.
+Chris Bourke wrote this lab, revamped and combined with Lab 2 by Sarah Roscoe for Summer 2021 and 2022. 
 
 ## Overview
 
@@ -34,7 +34,7 @@ http://download.oracle.com/javase/tutorial/java/nutsandbolts/while.html
 ### Lab Objectives & Topics
 Following the lab, you should be able to:
 * Receive and activate your CSE account and log into the network 
-  using a Windows machine and your CSE account.
+  using a computer and your CSE account.
 * Clone projects from GitHub using Eclipse
 * Open, compile, and execute a given Java program in Eclipse.
 * Write a simple program in the Eclipse IDE, compile, and 
@@ -49,14 +49,13 @@ Following the lab, you should be able to:
 
 
 ### Peer Programming Pair-Up
-You may work on this lab with a partner or by yourself. Whichever you choose, you should submit your code to the corresponding Handin assignment. Handin link: https://cse-apps.unl.edu/handin
+You will work on this lab with a partner One of you should submit your code to the corresponding Handin assignment, or both of you should submit identical code. Handin link: https://cse-apps.unl.edu/handin
 
 
 
 
 
-If you attend lab over Zoom, you 
-may work in a a *pair programming* setup.  At the start of
+You will work in a *pair programming* setup.  At the start of
 each lab, you may be randomly paired up with another student by
 a lab instructor.  One of you will be designated the *driver* 
 and the other the *navigator*.  
@@ -354,7 +353,8 @@ using the web grader.  To demonstrate, do the following.
 
 1. Open a browser to https://cse-apps.unl.edu/handin
 2. Login with your **CSE credentials**
-3. Click on Lab 1.0 and hand in the `Statistics.java` source file.  
+3. Click on Lab 1.0 and hand in the `Statistics.java`, `Natural.java,` and the 
+  `ChildCredit.java` source files.  
 You can either click the large 
 "handin" area and select the file or you can drag-drop the files.  You 
 will be able to re-handin the same file as many times as you want up 
