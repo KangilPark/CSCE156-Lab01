@@ -495,6 +495,8 @@ errors and completely debug your programs.
 * Submit the following files through webhandin:
   * `Natural.java`
   * `ChildCredit.java`
+  * `Statistics.java`
+  * `Birthday.java`
 * Run the grader and verify the output to complete your lab.
 
 ### Advanced Activity (Optional)
