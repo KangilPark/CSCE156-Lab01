@@ -11,7 +11,7 @@ This is a lab used in Computer Science II (CSCE 156, CSCE 156H)
 in the [Department of Computer Science & Engineering](https://cse.unl.edu) 
 at the [University of Nebraska-Lincoln](https://unl.edu).
 
-Chris Bourke wrote this lab, revamped and combined with Lab 2 by Sarah Roscoe for Summer 2021 and 2022. 
+Chris Bourke wrote this lab, revamped and combined with Lab 2 by Sarah Roscoe for Summer 2021 - 2023 . 
 
 ## Overview
 
