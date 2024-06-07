@@ -8,10 +8,10 @@ Followed by an introduction to using conditionals and loops in the Java programm
 
 
 This is a lab used in Computer Science II (CSCE 156, CSCE 156H) 
-in the [Department of Computer Science & Engineering](https://cse.unl.edu) 
+in the [Department of Computer Science & Engineering](https://computing.unl.edu) 
 at the [University of Nebraska-Lincoln](https://unl.edu).
 
-Chris Bourke wrote this lab, revamped and combined with Lab 2 by Sarah Roscoe for Summer 2021 - 2023 . 
+Chris Bourke wrote this lab, revamped and combined with Lab 2 by Sarah Roscoe for Summer 2021 - 2024. 
 
 ## Overview
 
@@ -33,8 +33,6 @@ http://download.oracle.com/javase/tutorial/java/nutsandbolts/while.html
 
 ### Lab Objectives & Topics
 Following the lab, you should be able to:
-* Receive and activate your CSE account and log into the network 
-  using a computer and your CSE account.
 * Clone projects from GitHub using Eclipse
 * Open, compile, and execute a given Java program in Eclipse.
 * Write a simple program in the Eclipse IDE, compile, and 
@@ -85,14 +83,8 @@ lab.
 
 ### 1.1. Setup
 
-#### 1.1.1. Claim your CSE Account  
 
-If you do not yet have your CSE credentials, you can claim them
-at the following URL: https://cse-apps.unl.edu/amu/claim 
-If you already have a CSE account but do not remember your 
-password you can reset it at the same URL. 
-
-#### 1.1.2. Install Java Developer Kit  
+#### 1.1.1. Install Java Developer Kit  
 
 You may already have "Java" installed on your computer, but this
 is most likely the Java Virtual Machine (JVM) that allows you to
@@ -104,7 +96,7 @@ URL.  Follow the instructions for downloading and installing.
 
 https://www.oracle.com/java/technologies/javase-downloads.html
 
-#### 1.1.3. Install Eclipse
+#### 1.1.2. Install Eclipse
 
 Eclipse is an Integrated Development Environment (IDE) for 
 Java development.  There are many other popular IDEs available 
@@ -322,66 +314,10 @@ will output `Happy Birthday`.  If it is not the user's birthday, output
 `Your friends have XX shopping days until your next birthday`
 again with an appropriate variable value.
 
-## 5. Testing, Submitting, & Grading your lab
-
-### 5.1 Testing
-
-Every lab will come with a collection of test files that contain 
-a suite of *unit tests* using the JUnit testing framework.  Before
-you submit your lab, you should run these tests locally to verify 
-that your code is correct.  
-
-1. Open the `StatisiticsTests.java` source file in the `src/test/java`
-source folder.  This file contains several unit tests written using
-JUnit *annotations*.  You are encouraged to explore how these tests
-are written and work and to even add your own tests but otherwise, 
-the file is complete.
-2. Run the test suite by clicking the usual "Play" button.  A report
-will be presented in a JUnit tab detailing which test cases pass and
-which fail along with expected output and the actual output (for 
-failed test cases).  
-3. Address any issues or failing tests by debugging your code and 
-rerun the test suite until all tests pass.
-
-### 5.2 Submitting
-
-Many of your assignments will include a programming portion that will 
-require you to hand in *soft-copy* source files for graders to 
-compile and evaluate.  To do this, you will use a web-based handin 
-program.  After handing your file(s) in, you can then grade them by 
-using the web grader.  To demonstrate, do the following.
-
-1. Open a browser to https://cse-apps.unl.edu/handin
-2. Login with your **CSE credentials**
-3. Click on Lab 1.0 and hand in the `Statistics.java`, `Natural.java,` and the 
-  `ChildCredit.java` source files.  
-You can either click the large 
-"handin" area and select the file or you can drag-drop the files.  You 
-will be able to re-handin the same file as many times as you want up 
-until the due date.
-
-### 5.3 Grading
-
-Now that the file has been handed in, you can "grade" yourself 
-by using the webgrader
-
-1. Open a new tab/window and point your browser 
-to https://cse.unl.edu/~cse156/grade (depending on your section, this 
-URL may be different).
-2. Fill the form with your CSE login and password, select the 
-appropriate assignment and click "Grade"
-3. Observe the expected output and compare it to your output to be
-sure that your program is correct.  
-
-For labs, the grader script simply runs the provided JUnit test
-suite, but it *may* run additional or modified tests.  In any case,
-be sure your code compiles, runs and passes all tests in the
-webgrader.  Address any issues and resubmit as many times as you 
-like up to the due date.
 
 # Part 2
 
-## 6. Conditionals & Loops
+## 5. Conditionals & Loops
 
 Java provides standard control structures for conditionals and
 repetition. Specifically, Java provides the usual `if-else`
@@ -423,9 +359,9 @@ for(String s : arr) {
 
 An enhanced for-loop can be used for `Set` and `List` collections.
 
-## 7. Activities 
+## 6. Activities 
 
-### 7.1 Sum of Natural Numbers
+### 6.1 Sum of Natural Numbers
 
 Natural numbers are the usual counting numbers; 1, 2, 3, ... In this
 exercise you will write several loops to compute the sum of natural
@@ -450,7 +386,7 @@ data.
     
     `zero + one + two + three + four + five + six + seven + eight + nine + ten = 55`
 
-### 7.2 Child Tax Credit
+### 6.2 Child Tax Credit
 
 When filing for federal taxes, a credit is given to tax payers with
 dependent children according to the following rules. The first dependent
@@ -488,19 +424,69 @@ Total Credit:   $1500.00
     particular child’s age, you can use a *getter* method. For example,
     to get the age of `tom` you can use the syntax, `tom.getAge()`
 
-### 8. Testing, Submitting & Grading
-
-* Test your programs using the provided JUnit test suite(s).  Fix any
-errors and completely debug your programs.
-* Submit the following files through webhandin:
-  * `Natural.java`
-  * `ChildCredit.java`
-  * `Statistics.java`
-  * `Birthday.java`
-* Run the grader and verify the output to complete your lab.
-
 ### Advanced Activity (Optional)
 
 Use the `String.format()` method to reformat the output of the Child Tax 
 Credit program to print every piece of data in its own column.
+
+
+## 7. Testing, Submitting, & Grading your lab
+
+### 7.1 Testing
+
+Every lab will come with a collection of test files that contain 
+a suite of *unit tests* using the JUnit testing framework.  Before
+you submit your lab, you should run these tests locally to verify 
+that your code is correct.  
+
+1. Open the `StatisiticsTests.java` source file in the `src/test/java`
+source folder.  This file contains several unit tests written using
+JUnit *annotations*.  You are encouraged to explore how these tests
+are written and work and to even add your own tests but otherwise, 
+the file is complete.
+2. Run the test suite by clicking the usual "Play" button.  A report
+will be presented in a JUnit tab detailing which test cases pass and
+which fail along with expected output and the actual output (for 
+failed test cases).  
+3. Address any issues or failing tests by debugging your code and 
+rerun the test suite until all tests pass.
+
+### 7.2 Submitting
+
+Many of your assignments will include a programming portion that will 
+require you to hand in *soft-copy* source files for graders to 
+compile and evaluate.  To do this, you will use a web-based handin 
+program.  After handing your file(s) in, you can then grade them by 
+using the web grader.  To demonstrate, do the following.
+
+1. Open a browser to https://cse-apps.unl.edu/handin
+2. Login with your **CSE credentials**
+3. Click on Lab 1.0 and hand in the following files:
+  * `Natural.java`
+  * `ChildCredit.java`
+  * `Statistics.java`
+  * `Birthday.java`
+You can either click the large "handin" area and select the file or you can drag-drop the files.  You 
+will be able to re-handin the same file as many times as you want up 
+until the due date.
+
+### 7.3 Grading
+
+Now that the file has been handed in, you can "grade" yourself 
+by using the webgrader
+
+1. Open a new tab/window and point your browser 
+to https://cse-linux-01.unl.edu/~c-sroscoe2/CSE156/grade/ (depending on your section, this 
+URL may be different).
+2. Fill the form with your CSE login and password, select the 
+appropriate assignment and click "Grade"
+3. Observe the expected output and compare it to your output to be
+sure that your program is correct.  
+
+For labs, the grader script simply runs the provided JUnit test
+suite, but it *may* run additional or modified tests.  In any case,
+be sure your code compiles, runs and passes all tests in the
+webgrader.  Address any issues and resubmit as many times as you 
+like up to the due date.
+
 
