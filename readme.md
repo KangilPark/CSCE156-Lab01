@@ -476,7 +476,7 @@ Now that the file has been handed in, you can "grade" yourself
 by using the webgrader
 
 1. Open a new tab/window and point your browser 
-to https://cse-linux-01.unl.edu/~c-sroscoe2/CSE156/grade/ (depending on your section, this 
+to https://cse-linux-01.unl.edu/~c-kpark5/CSCE156/grade/ (depending on your section, this 
 URL may be different).
 2. Fill the form with your CSE login and password, select the 
 appropriate assignment and click "Grade"
